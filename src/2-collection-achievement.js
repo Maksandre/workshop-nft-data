@@ -1,4 +1,4 @@
-import { connectSdk } from "./modules/connect-sdk.js";
+import { connectSdk } from "./utils/connect-sdk.js";
 
 const createCollection = async () => {
   const {sdk} = await connectSdk();
@@ -9,7 +9,7 @@ const createCollection = async () => {
     symbol: "ACH",
     cover_image: {url: "https://gateway.pinata.cloud/ipfs/QmWm5mPjmWqFvF2wyXbheumBWoEQpWm1f9GqGQfLfBYbDi"},
     // NOTICE: activate nesting in order to assign achievements
-    permissions: {nesting: true},
+    permissions: {nesting: {collectionAdmin: true}},
     encodeOptions: {
       // NOTICE: we do not want to mutate tokens of the Achievements collection
       defaultPermission: {collectionAdmin: true, tokenOwner: false, mutable: false},

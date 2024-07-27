@@ -4,12 +4,12 @@
 
 ## Before we start
 
-- Create Substrate account
+- Create a Substrate account
 - Get `OPL` (testnet) tokens: https://t.me/unique2faucet_opal_bot
 - Create `.env` from `.env-example` and set your mnemonic phrase
 - Run `npm install`
 
-## 1. Create Racing cars collection
+## 1. Create a Racing cars collection
 
 ```sh
 node ./src/1-collection-cars.js
@@ -31,8 +31,8 @@ Pass the following arguments to the function
 For example:
 
 ```sh
-node ./src/3-create-car.js 3132 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY FastGuy
-node ./src/3-create-car.js 3132 5CPuU98SimxwoHZRZCi8hezgnfBwATs8vKo6haqkaP3hUj7X RaceQueen
+node ./src/3-create-car.js 3135 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY FastGuy
+node ./src/3-create-car.js 3135 5CPuU98SimxwoHZRZCi8hezgnfBwATs8vKo6haqkaP3hUj7X RaceQueen
 ```
 
 ## 4. Play the game

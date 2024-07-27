@@ -1,5 +1,5 @@
-import { connectSdk } from "./modules/connect-sdk.js";
-import { getRandomInt } from "./modules/random.js";
+import { connectSdk } from "./utils/connect-sdk.js";
+import { getRandomInt } from "./utils/random.js";
 
 
 // node ./src/create-token.js {collectionId} {address} {nickname}

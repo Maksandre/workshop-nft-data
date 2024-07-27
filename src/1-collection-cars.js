@@ -1,4 +1,4 @@
-import { connectSdk } from "./modules/connect-sdk.js";
+import { connectSdk } from "./utils/connect-sdk.js";
 
 const createCollection = async () => {
   const {account, sdk} = await connectSdk();
@@ -14,8 +14,8 @@ const createCollection = async () => {
     description: "Racing simulation demo",
     symbol: "CAR",
     cover_image: {url: "https://gateway.pinata.cloud/ipfs/QmeNzaLfsUUi5pGmhrASEpXF52deCDuByeKbU7SuZ9toEi"},
-    // NOTICE: activate nesting in order to assign achievements
-    permissions: {nesting: true},
+    // NOTICE: activate nesting for collection admin in order to assign achievements
+    permissions: {nesting: {collectionAdmin: true}},
     encodeOptions: {
       overwriteTPPs: [
         {
