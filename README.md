@@ -1,4 +1,4 @@
-# Unique NFT data management
+# Unique NFT data management workshop
 
 The workshop demonstrates how to store, manage, and extend data using nested tokens within the Unique Network.
 
@@ -61,10 +61,11 @@ node ./src/3-create-car.js 3135 5CPuU98SimxwoHZRZCi8hezgnfBwATs8vKo6haqkaP3hUj7X
 ## 4. Play the game
 
 Pass the following arguments to the function
-- collectionId (step 1)
+- Cars collectionId (step 1)
+- Achievements collectionId (step 2)
 - First player's tokenId 
 - Second player's tokenId
 
 ```sh
-node ./src/4-play.js 3132 1 2
+node ./src/4-play.js 3132 3133 1 2
 ```
